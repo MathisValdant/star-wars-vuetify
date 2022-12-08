@@ -33,5 +33,3 @@ npm run build
 ```sh
 npm run lint
 ```
-#� �s�t�a�r�-�w�a�r�s�-�v�u�e�t�i�f�y�
-�
