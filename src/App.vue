@@ -28,7 +28,6 @@ export default {
       } else if (!navigator.onLine && !this.isDisconnect) {
         this.isDisconnect = true;
       }
-      console.log(navigator.onLine, this.isDisconnect);
     }
   },
   mounted() {
