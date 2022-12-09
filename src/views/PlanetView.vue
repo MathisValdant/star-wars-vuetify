@@ -28,7 +28,7 @@ const user = useCurrentUser();
       >
         <v-row class="mx-1">
           <v-col cols="12" md="4" lg="4" class="align-self-center">
-            <v-img src="/src/assets/planet.png" />
+            <img src="@/assets/planet.png" />
           </v-col>
           <v-col cols="12" md="8" lg="8" class="align-self-center">
             <h1 class="d-inline-block">{{ infos.name }}</h1>
@@ -41,7 +41,6 @@ const user = useCurrentUser();
             ></v-btn>
             <v-progress-circular
               v-if="inProgress"
-              class=""
               color="primary"
               indeterminate
               :size="80"
