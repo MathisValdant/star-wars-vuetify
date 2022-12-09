@@ -10,17 +10,23 @@ import {
   <main class="py-15">
     <v-container>
       <v-row class="justify-center">
-        <v-col xs="12" sm="8" md="8" lg="6" class="bg-primary">
+        <v-col xs="12" sm="8" md="8" lg="6">
           <h1>Connexion / Inscription</h1>
           <p class="pb-5">Rejoignez le côté obscur de la Force...</p>
-          <v-text-field type="email" label="Email :" v-model="email" />
           <v-text-field
+            type="email"
+            label="Email :"
+            v-model="email"
+            color="primary"
+          />
+          <v-text-field
+            color="primary"
             type="password"
             label="Mot de passe :"
             v-model="password"
           />
           <div v-if="failed">
-            <v-alert type="error"
+            <v-alert type="error" class="mb-5"
               >Cet email ou ce mot de passe n'existe pas</v-alert
             >
           </div>
