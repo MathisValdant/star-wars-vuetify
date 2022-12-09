@@ -48,8 +48,8 @@
           <v-img
             :src="
               model === 'Lumineux'
-                ? '/src/assets/x-wing.png'
-                : '/src/assets/tie.png'
+                ? './src/assets/x-wing.png'
+                : './src/assets/tie.png'
             "
           />
         </v-col>
@@ -63,9 +63,9 @@ export default {
   data() {
     return {
       images: [
-        "/src/assets/combat.jpg",
-        "/src/assets/yoda.jpg",
-        "/src/assets/vador.jpg",
+        "./src/assets/combat.jpg",
+        "./src/assets/yoda.jpg",
+        "./src/assets/vador.jpg",
       ],
       model: "Lumineux",
     };
