@@ -71,9 +71,9 @@ export default {
       try {
         let result = await fetch(`https://swapi.dev/api/planets/${id}/`);
         this.infos = await result.json();
+        this.inProgress = false;
         // Vérifier si la planète est en favori
         this.infos.isFavorite = await this.isFavorite(this.infos);
-        this.inProgress = false;
       } catch (error) {
         console.error(error);
       }
