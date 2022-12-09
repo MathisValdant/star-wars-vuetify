@@ -45,13 +45,7 @@
           ></v-switch>
         </v-col>
         <v-col cols="12" md="6">
-          <v-img
-            :src="
-              model === 'Lumineux'
-                ? './src/assets/x-wing.png'
-                : './src/assets/tie.png'
-            "
-          />
+          <v-img :src="model === 'Lumineux' ? './x-wing.png' : './tie.png'" />
         </v-col>
       </v-row>
     </v-container>
@@ -62,11 +56,7 @@
 export default {
   data() {
     return {
-      images: [
-        "./src/assets/combat.jpg",
-        "./src/assets/yoda.jpg",
-        "./src/assets/vador.jpg",
-      ],
+      images: ["./combat.jpg", "./yoda.jpg", "./vador.jpg"],
       model: "Lumineux",
     };
   },
